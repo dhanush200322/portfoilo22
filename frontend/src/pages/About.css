@@ -1,0 +1,67 @@
+.about-container {
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Gradient + Glow Heading (same as Featured Projects) */
+.about-title {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ffffff 0%, #00cfff 50%, #a45eff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+.about-title span {
+  background: linear-gradient(90deg, #00cfff 0%, #a45eff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+.about-content {
+  max-width: 800px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.about-text {
+  font-size: 1.3rem;
+  line-height: 1.9;
+  color: #e0e0e0;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+  margin-bottom: 3rem;
+}
+
+.about-text span {
+  color: #00ffff;
+  font-weight: 600;
+}
+
+.about-floating-box {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 1.5rem 3rem;
+  font-size: 1.1rem;
+  color: #00ffff;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+.about-floating-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+}

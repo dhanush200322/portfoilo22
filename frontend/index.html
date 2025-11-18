@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | DHANUSH AV</title>
+    <meta name="description" content="Full-stack developer specializing in React, Three.js, and immersive web experiences. View my portfolio of cutting-edge projects." />
+    <meta name="author" content="Your Name" />
+    <meta name="keywords" content="web developer, react developer, three.js, framer motion, portfolio, full stack" />
+    <link rel="icon" href="dhanushlogo.png" />
+
+    <meta property="og:title" content="Portfolio | DHANUSH AV" />
+    <meta property="og:description" content="Full-stack developer specializing in React, Three.js, and immersive web experiences" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:image" content="" />
+
+    <style>
+      /* Disable Text Selection Completely */
+      html, body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      /* Disable Image Drag */
+      img {
+        -webkit-user-drag: none;
+        user-drag: none;
+      }
+
+      /* Allow input selection if needed */
+      input, textarea {
+        -webkit-user-select: text !important;
+        -moz-user-select: text !important;
+        -ms-user-select: text !important;
+        user-select: text !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      // Disable right-click
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+      // Disable text selection
+      document.addEventListener("selectstart", (e) => {
+        if (!e.target.closest("input, textarea")) {
+          e.preventDefault();
+        }
+      });
+
+      // Disable copy, cut, paste
+      ["copy", "cut", "paste"].forEach((event) => {
+        document.addEventListener(event, (e) => e.preventDefault());
+      });
+
+      // Disable drag events
+      document.addEventListener("dragstart", (e) => e.preventDefault());
+
+      // Disable DevTools shortcuts
+      document.addEventListener("keydown", (e) => {
+        // F12
+        if (e.key === "F12") e.preventDefault();
+
+        // Ctrl + Shift + I (DevTools)
+        if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
+          e.preventDefault();
+        }
+
+        // Ctrl + U (View Source)
+        if (e.ctrlKey && e.key.toLowerCase() === "u") {
+          e.preventDefault();
+        }
+
+        // Ctrl + C / Ctrl + X
+        if (e.ctrlKey && (e.key.toLowerCase() === "c" || e.key.toLowerCase() === "x")) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>
