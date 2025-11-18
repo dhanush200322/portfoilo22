@@ -4,47 +4,40 @@ import nodemailer from "nodemailer";
 
 const router = express.Router();
 
-// POST /api/contact
 router.post("/", async (req, res) => {
   const { name, email, message } = req.body;
 
   if (!name || !email || !message) {
-    return res.status(400).json({ error: "All fields are required" });
+    return res.status(400).json({ error: "All fields required" });
   }
 
   try {
-    // Save to MongoDB
     const newMessage = new Contact({ name, email, message });
     await newMessage.save();
 
-    // ---------- SEND EMAIL USING NODEMAILER ----------
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER,   // Gmail ID
-        pass: process.env.EMAIL_PASS    // App Password
-      }
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
     });
 
-    const mailOptions = {
+    await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,       // send to your own Gmail
-      subject: `New Contact Message from ${name}`,
+      to: process.env.EMAIL_USER,
+      subject: `New Contact Form Message from ${name}`,
       text: `
 Name: ${name}
 Email: ${email}
+Message: ${message}
+      `,
+    });
 
-Message:
-${message}
-      `
-    };
-
-    await transporter.sendMail(mailOptions);
-
-    return res.status(200).json({ success: "Message sent successfully!" });
+    res.json({ success: true, message: "Message sent successfully!" });
   } catch (error) {
-    console.log("Error sending message:", error);
-    return res.status(500).json({ error: "Server error" });
+    console.log("Contact Error:", error);
+    res.status(500).json({ error: "Server error" });
   }
 });
 

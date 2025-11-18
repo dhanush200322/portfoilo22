@@ -8,28 +8,17 @@ dotenv.config();
 
 const app = express();
 
-// ✅ CORS CONFIG (Required for Netlify + Local)
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",                  // local frontend (Vite)
-      "http://localhost:3000",                  // if using CRA
-      "dhanushavportfolioweb.netlify.app"   // <-- Replace with your real Netlify URL
-    ],
-  })
-);
-
+app.use(cors());
 app.use(express.json());
 
-// ✅ MongoDB Connection
+// Connect MongoDB
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected ✔️"))
   .catch((err) => console.log("MongoDB Error ❌", err));
 
-// ✅ Routes
+// Routes
 app.use("/api/contact", contactRoutes);
 
-// ✅ Start Server (Render will auto use PORT)
-const PORT = process.env.PORT || 5001;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT} 🚀`));

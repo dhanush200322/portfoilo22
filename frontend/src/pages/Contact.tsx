@@ -23,7 +23,7 @@ const Contact = () => {
     const loadingToast = toast.loading("Sending message...");
 
     try {
-      const res = await fetch("http://localhost:5001/api/contact", {
+      const res = await fetch("https://portfoilo22.onrender.com/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
