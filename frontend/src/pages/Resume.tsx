@@ -66,7 +66,7 @@ export default function Resume() {
         {/* Download Button */}
         <div className="mt-12 flex justify-center">
           <a
-            href="/resume.pdf"       // make sure resume.pdf is inside public/
+            href="/DHANUSH RESUME.pdf"       // make sure resume.pdf is inside public/
             download="Dhanush-Resume.pdf"
             className="flex items-center gap-2 bg-[#00B6FF] text-black font-medium px-8 py-4 rounded-xl hover:bg-[#00A4E6] transition"
           >
