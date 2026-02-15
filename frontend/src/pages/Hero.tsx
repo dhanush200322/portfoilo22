@@ -28,7 +28,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8"
           >
-            Full Stack Developer • Creative Coder • Problem Solver
+            Full Stack Developer • AI Automation • Problem Solver
           </motion.p>
 
           <motion.div
