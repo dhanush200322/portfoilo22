@@ -24,7 +24,7 @@ export default function About() {
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         >
-          I’m a passionate <span>Full-Stack Developer</span> and <span>Businessman</span> with a vision to create digital
+          I’m a passionate <span>Full-Stack Developer and Automation Developer </span> <span>(Businessman)</span> with a vision to create digital
   experiences that blend <span>innovation, design, and strategy</span>.  
   I specialize in building high-performance web applications and transforming ideas into scalable digital products.  
   My entrepreneurial mindset drives me to not only code — but to <span>build brands, lead teams, and grow businesses</span>.  
