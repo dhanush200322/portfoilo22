@@ -25,8 +25,24 @@ const projects = [
     tags: ["React Native", "OpenAI", "WebSockets"],
     github: "#",
     demo: "#",
-  },
+  }, 
+  {
+  title: "RAG-Based Chatbot for Smart Home Automation",
 
+  description: "Developed an AI-powered chatbot using Retrieval-Augmented Generation (RAG) to control and monitor smart home devices. The system fetches real-time data and provides context-aware responses using a custom knowledge base. Built with scalable backend APIs and real-time communication support.",
+
+  image: "ragchatbot.png",
+
+  tags: [
+    "React.js",
+    "Node.js",
+    "OpenAI API",
+  ],
+
+  github: "https://github.com/dhanush200322/mcp-server-url",
+
+}
+ 
 ];
 
 const Projects = () => {
