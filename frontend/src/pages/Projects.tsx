@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { title } from "process";
 
 const projects = [
   {
@@ -41,7 +42,14 @@ const projects = [
 
   github: "https://github.com/dhanush200322/mcp-server-url",
 
-}
+},
+{   
+    title: "AV Care OS",
+    description: "AI Monitoring System for Healthcare Applications",
+    image: "avcareos.png",
+    tags: ["React js", "Tailwind CSS","Supabase"],
+    github: "#",
+    demo: "https://av-care-os.vercel.app/", },
  
 ];
 
