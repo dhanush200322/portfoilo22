@@ -50,6 +50,13 @@ const projects = [
     tags: ["React js", "Tailwind CSS","Supabase"],
     github: "#",
     demo: "https://av-care-os.vercel.app/", },
+    {   
+    title: "NoteBook AI",
+    description: "AI Research Assistant for students and Researchers",
+    image: "notebookai.png",
+    tags: ["React js", "Tailwind CSS","Supabase","Resend API","Groq API","Stripe API"],
+    github: "#",
+    demo: "https://notebook-llm-space-myfb.vercel.app/", },
  
 ];
 
