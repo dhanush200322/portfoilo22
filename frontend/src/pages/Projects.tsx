@@ -57,6 +57,13 @@ const projects = [
     tags: ["React js", "Tailwind CSS","Supabase","Resend API","Groq API","Stripe API"],
     github: "#",
     demo: "https://notebook-llm-space-myfb.vercel.app/", },
+     {   
+    title: "Nexora AI",
+    description: "Built your own AI Chatbot with Nexora AI",
+    image: "logonex.png",
+    tags: ["Next.js", "Tailwind CSS","Redis","Resend API","Groq API","Express.js","Render","Razorpay API","Docker","JWT"],
+    github: "#",
+    demo: "https://ai-agent-pohw.vercel.app/", },
  
 ];
 
