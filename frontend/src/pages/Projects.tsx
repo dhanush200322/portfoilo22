@@ -57,6 +57,13 @@ const projects = [
     tags: ["React js", "Tailwind CSS","Supabase","Resend API","Groq API","Stripe API"],
     github: "#",
     demo: "https://notebook-llm-space-myfb.vercel.app/", },
+    {   
+    title: "NGO Website",
+    description: "A modern website for an NGO to showcase their work and engage with supporters",
+    image: "InAmigos.jpeg",
+    tags: ["HTML", "CSS ","Responsive Design","Javascript"],
+    github: "https://github.com/dhanush200322/InAmigos-Website",
+    demo: "https://in-amigos-website-tan.vercel.app/", },
      {   
     title: "Nexora AI",
     description: "Built your own AI Chatbot with Nexora AI",
