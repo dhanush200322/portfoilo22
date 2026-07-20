@@ -71,6 +71,15 @@ const projects = [
     tags: ["Next.js", "Tailwind CSS","Redis","Resend API","Groq API","Express.js","Render","Razorpay API","Docker","JWT"],
     github: "#",
     demo: "https://ai-agent-pohw.vercel.app/", },
+    {
+    title: "FolioTracker - Finance Portfolio Tracker",
+    description: "A full-stack, enterprise-grade personal wealth tracker. It calculates real-time profits, losses, and ROI across various asset classes with a highly responsive, modern FinTech UI.",
+    image: "tracker.png",
+    tags: ["React", "NestJS", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS", "React Query"],
+    github: "https://github.com/dhanush200322/Finance-Tracker",
+    demo: "https://finance-tracker-gules-nu.vercel.app",
+},
+
  
 ];
 
